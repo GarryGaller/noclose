@@ -70,7 +70,7 @@ noclose -class Notepad -enable
 
 **for a window defined by a title**
 ```
-noclose -v -title "Безымянный — Блокнот" -disable close
+noclose -v -title "Р‘РµР·С‹РјСЏРЅРЅС‹Р№ вЂ” Р‘Р»РѕРєРЅРѕС‚" -disable close
 #for the explorer window
 noclose -v -title "noclose" -class CabinetWClass -disable close
 noclose -v -title "noclose" -class CabinetWClass -enable
