@@ -50,7 +50,8 @@ Command line help
   * **-title window title**    *The title of the window in which you want to disable the buttons\system menu items.* 
   
 **required arguments:** 
-  * **-disable system command**    *The command that will be disabled: SC_CLOSE, SC_SIZE, SC_MOVE, SC_MAXIMIZE, SC_MINIMIZE, SC_RESTORE.*  
+  * **-disable system command**    *The command that will be disabled: SC_CLOSE, SC_SIZE, SC_MOVE, SC_MAXIMIZE, SC_MINIMIZE, SC_RESTORE.*
+                                   *(you can write in lowercase and without the SC prefix_.)*
   * **-enable**                    *Restoring the original menu*
   
 
@@ -66,6 +67,15 @@ noclose -class Notepad -disable SC_MAXIMIZE
 noclose -class Notepad -disable SC_MOVE
 noclose -class Notepad -enable
 ```
+
+**for a window defined by a title**
+```
+noclose -v -title "Безымянный — Блокнот" -disable close
+#for the explorer window
+noclose -v -title "noclose" -class CabinetWClass -disable close
+noclose -v -title "noclose" -class CabinetWClass -enable
+```
+
 
 **for the current console window**
 ```
