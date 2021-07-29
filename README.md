@@ -51,7 +51,7 @@ Command line help
   
 **required arguments:** 
   * **-disable system command**    *The command that will be disabled: SC_CLOSE, SC_SIZE, SC_MOVE, SC_MAXIMIZE, SC_MINIMIZE, SC_RESTORE.*
-                                   *(you can write in lowercase and without the SC prefix_.)*
+                                   *(you can write in lowercase and without the SC_ prefix.)*
   * **-enable**                    *Restoring the original menu*
   
 
